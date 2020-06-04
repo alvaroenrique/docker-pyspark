@@ -2,20 +2,12 @@
 
 Este container esta diseñado para ejecutarlo con Remote-Containers, extensión de vscode.
 
-## Pasos de instalación
+## Iniciar ambiente de desarrollo en container con VsCode
 
-1. Crear imagen
-   `docker build -t spark-ubuntu .`
+1. En vscode, ctrl-shift-p 
 
-2. Ejecutar container
-   `docker run -it spark-ubuntu /bin/bash`
+2. Escoger la opción "Remote-container: Reopen Container"
 
-3. En vscode, ctrl-shift-p y escoger "Attach to Running Container"
+Todos los archivos creados en el contenedor se guardarán en la carpeta donde se inició el contenedor
 
-## Guardar cambios
 
-1. Obtener el id del container (docker ps) y ejecutar:
-   `docker commit <container-id> <nueva-imagen>`
-
-2. Ahora se debe ejecutar el container con la nueva imagen
-   `docker run -it <nueva-imagen> /bin/bash`
