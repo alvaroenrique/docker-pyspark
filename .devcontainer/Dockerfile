@@ -1,6 +1,7 @@
 
 FROM ubuntu:18.04
 
+ENV LANG C.UTF-8
 ARG URL_SPARK="https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz"
 ARG SPARK_FILE="spark-2.4.5-bin-hadoop2.7"
 ARG SPARK_HOME="/opt/$SPARK_FILE"
